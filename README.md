@@ -8,7 +8,7 @@ The program facilitates the communication among the client and the server utiliz
 
 Implemented using following JAVA Classes:
 
- Java AWT (Abstract Windowing Toolkit)
+ Java AWT ( Abstract Windowing Toolkit )
 
  Robot Class: This class is used to generate native system input events for the applications where control of
 
