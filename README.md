@@ -20,4 +20,4 @@ a network in java.
 
  Graphics and Image Classes: To draw onto graphical components that are realized on various devices, as
 
-well as onto off-screen images, and fetching the screen capture images at the client end.
+well as onto off-screen images, and fetching the screen capture images at the client side.
