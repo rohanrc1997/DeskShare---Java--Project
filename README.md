@@ -1,4 +1,4 @@
-DeskShare---Java-Project
+DeskShare (Java Project)
 
 OOM Mini Project: Designing a Software Utility to Control and View Another Computer Remotely over a Network Connection (Remote Desktop Administration) (IIIT-A)
 
