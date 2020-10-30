@@ -25,7 +25,13 @@ public class ServerInitiator {
 
     public static void main(String args[]){
         String port = JOptionPane.showInputDialog("Please enter listening port");
-        new ServerInitiator().initialize(Integer.parseInt(port));
+        try {
+            new ServerInitiator().initialize(Integer.parseInt(port));
+        } catch (Exception NumberFormatException e)
+        {
+            System.out.println("Invalid input entered for listening port. Aborting startup.");
+            throw(e);
+        }
     }
 
     public void initialize(int port){
@@ -37,7 +43,7 @@ public class ServerInitiator {
             //Listen to server port and accept clients connections
             while(true){
                 Socket client = sc.accept();
-                System.out.println("New client Connected to the server");
+                System.out.println("New client Connected to the server: " + client.toString());
                 //Per each client create a ClientHandler
                 new ClientHandler(client,desktop);
             }
