@@ -35,7 +35,11 @@ public class ClientInitiator {
     public static void main(String[] args){
         String ip = JOptionPane.showInputDialog("Please enter server IP");
         String port = JOptionPane.showInputDialog("Please enter server port");
+        try {
         new ClientInitiator().initialize(ip, Integer.parseInt(port));
+        } (Exception e) {
+            throw("Exception occured while initializing client config. " + e);
+        }
     }
 
     public void initialize(String ip, int port ){
